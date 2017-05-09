@@ -13,12 +13,15 @@ int pesquisa(int *ponteirovetor, int tam, int elemento)
     {
         if(ponteirovetor[i]==elemento)
         {
-            return ;
+            return i+1;
+            break;
         }
         else
         {
             i++;
         }
+        
+        return 0;
     }
 }
 
@@ -51,7 +54,7 @@ int main()
     
     if(indice!=0)
     {
-        printf("\nO elemento %d esta no indice %d\n", indice);
+        printf("\nO elemento %d esta no indice %d\n", elemento, indice);
     }
     else
     {
